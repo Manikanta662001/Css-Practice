@@ -1,0 +1,52 @@
+.row::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.column {
+  width: 25%;
+  float: left;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.lorem-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.lorem-text {
+  width: auto;
+  margin: auto;
+  border: 2px solid cyan;
+  margin-top: 10px;
+  min-height: 300px;
+  max-height: 450px;
+  overflow: auto;
+  text-align: justify;
+}
+/* to hide scrollbars */
+.lorem-text::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .lorem-container {
+    flex-direction: column;
+  }
+  .lorem-text {
+    max-height: 200px;
+    min-height: 150px;
+  }
+}

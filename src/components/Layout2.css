@@ -1,0 +1,82 @@
+.navbar,
+.header-container {
+  border-bottom: 2px solid blue;
+}
+
+.navbar {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.navbar li {
+  list-style-type: none;
+  border: 1px solid darkturquoise;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: darkorange;
+}
+
+.navbar li:hover {
+  color: fuchsia;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.header-container h1 {
+  width: 300px;
+  text-align: center;
+  border: 2px solid gold;
+  border-radius: 5px;
+  margin: 7px auto 25px auto;
+}
+
+.content-container {
+  display: flex;
+  gap: 0px 30px;
+}
+
+.sidebar-container {
+  flex: 20%;
+  border-right: 2px solid blue;
+  margin: 0;
+  padding: 0;
+}
+
+.data-container {
+  flex: 80%;
+}
+
+.data-container > p,
+.flex-container p {
+  text-align: justify;
+}
+
+.sidebar-container li {
+  text-align: center;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 10px calc(20% - 10px);
+  border-bottom: 2px solid blue;
+}
+
+.flex-container {
+  display: flex;
+  gap: 0px 5px;
+  position: relative;
+}
+
+.flex-container .second-heading {
+  position: relative;
+}
+
+.flex-container .second-heading::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  border: 1px solid blue;
+  right: -3px;
+}

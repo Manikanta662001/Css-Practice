@@ -1,0 +1,38 @@
+.main-container::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.main-container div {
+  border: 1px solid red;
+  width: 250px;
+  margin: 20px;
+  text-align: center;
+}
+
+.sub-container {
+  float: left;
+  padding: 16px;
+}
+.sub-container::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.btn-1 {
+  float: left;
+}
+
+.btn-2 {
+  float: right;
+}
+
+.second-container {
+  float: left;
+}
+
+.third-container {
+  float: left;
+}

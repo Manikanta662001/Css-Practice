@@ -4,15 +4,17 @@ import Tooltip from "./components/Tooltip";
 import Float from "./components/Float";
 import Layout1 from "./components/Layout1";
 import Layout2 from "./components/Layout2";
+import Calculator from "./components/calculator/Calculator";
 
 function App() {
   return (
     <div className="App">
-      <MediaQuery />
+      {/* <MediaQuery />
       <Tooltip />
       <Float />
       <Layout1 />
-      <Layout2 />
+      <Layout2 /> */}
+      <Calculator/>
     </div>
   );
 }

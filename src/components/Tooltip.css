@@ -7,7 +7,6 @@
   position: absolute;
   background-color: #000;
   color: #fff;
-  padding: 5px 7px;
   border-radius: 7px;
   width: 100px;
   text-align: center;
@@ -36,3 +35,20 @@
   position: relative;
 }
 
+.Input-Wrapper input {
+  width: 200px;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 16px;
+  background-image: url("../assets/SearchIcon.png");
+  background-position: -4px -2px;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+.Input-Wrapper input:focus {
+  width: 100%;
+}

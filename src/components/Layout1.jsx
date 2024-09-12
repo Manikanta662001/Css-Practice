@@ -3,7 +3,7 @@ import "./Layout1.css";
 const Layout1 = () => {
   return (
     <div>
-      <div className="header-container">
+      <div className="header-container-1">
         <h1>Header</h1>
       </div>
       <div className="column-container">

@@ -398,6 +398,9 @@ const Tooltip = () => {
         </p>
         <footer>This is footer</footer>
       </div>
+      <div className="Input-Wrapper">
+        <input type="text" placeholder="Enter A Name" />
+      </div>
     </>
   );
 };

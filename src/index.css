@@ -1,3 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS to hide scrollbars */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+/* creating variables */
+:root {
+  --primary-color: #1da1f2;
+  --secondary-color: #14171a;
+  --font-size-large: 1.25rem;
+}
+
 body {
   margin: 0;
 }

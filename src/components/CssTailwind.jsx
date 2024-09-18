@@ -1,4 +1,6 @@
 import React from "react";
+import { ReactComponent as DownloadIcon } from "../assets/DownloadIcon.svg";
+import Icon from "../assets/DownloadIcon.svg";
 
 const CssTailwind = () => {
   return (
@@ -79,7 +81,16 @@ const CssTailwind = () => {
         numquam dolore quis.
       </p>
       {/* using created variables  */}
-      <h1 className="font-mono text-[30px] italic font-bold bg-[var(--primary-color)]">Font size</h1>
+      <h1 className="font-mono text-[30px] italic font-bold bg-[var(--primary-color)]">
+        Font size
+      </h1>
+      {/* using svg as image tag */}
+      <img src={Icon} alt="img-unavailable" />
+      {/* using svg as react component */}
+      <DownloadIcon width={"100px"} height={"100px"} />
+      {/* if we have images in public folder then we can directly access them */}
+      <img src="/logo192.png" alt="" />
+      <img src="/favicon.ico" alt="" />
     </>
   );
 };

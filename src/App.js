@@ -7,6 +7,7 @@ import Layout2 from "./components/Layout2";
 import Calculator from "./components/calculator/Calculator";
 import Events from "./components/Events";
 import CssTailwind from "./components/CssTailwind";
+import ZomatoHome from "./components/ZomatoHome";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       <Layout2 /> */}
       {/* <Calculator/> */}
       {/* <Events/> */}
-      <CssTailwind/>
+      {/* <CssTailwind/> */}
+      <ZomatoHome/>
     </div>
   );
 }
